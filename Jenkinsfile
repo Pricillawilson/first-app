@@ -1,9 +1,9 @@
 pipeline{
     agent any
     stages{
-        stage("Git Checkout"){
+        stage("Welcome"){
             steps{
-                git credentialsId:'github' ,url:'https://github.com/Pricillawilson/first-app.git',branch:'main'
+                echo 'Hellalo'
             }
         }
     }
